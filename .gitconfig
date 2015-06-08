@@ -1,0 +1,13 @@
+[user]
+	name = will
+	email = 
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[color]
+	ui = true
+[core]
+	editor = vim
