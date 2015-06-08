@@ -58,6 +58,8 @@ Plugin 'luochen1990/rainbow'
  " Send command from vim to a running tmux session
 Plugin 'jgdavey/tslime.vim'
 Plugin 'Lokaltog/vim-powerline'
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
