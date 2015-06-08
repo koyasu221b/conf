@@ -117,5 +117,5 @@ set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
-    "To display the status line always, set the following option in your vimrc:
+"To display the status line always, set the following option in your vimrc:
 set laststatus=2
