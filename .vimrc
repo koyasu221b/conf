@@ -57,6 +57,7 @@ Plugin 'wlangstroth/vim-racket'
 Plugin 'luochen1990/rainbow'
  " Send command from vim to a running tmux session
 Plugin 'jgdavey/tslime.vim'
+Plugin 'Lokaltog/vim-powerline'
 
 call vundle#end()
 filetype plugin indent on
@@ -107,10 +108,12 @@ let g:rainbow_active = 1
 " tslime {{{
 let g:tslime_ensure_trailing_newlines = 1
 "let g:tslime_normal_mapping = '<leader>t'
-"let g:tslime_visual_mapping = '<leader>t'
-"let g:tslime_vars_mapping = '<leader>T'
-" }}}
 "
-vmap <C-c><C-c> <Plug>SendSelectionToTmux
-nmap <C-c><C-c> <Plug>NormalModeSendToTmux
-nmap <C-c>r <Plug>SetTmuxVars
+" power line
+"let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+    "To display the status line always, set the following option in your vimrc:
+set laststatus=2
