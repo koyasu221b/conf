@@ -34,32 +34,63 @@ Plugin 'scrooloose/syntastic'
 
 Plugin '29decibel/codeschool-vim-theme'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'davidhalter/jedi-vim'
 Plugin 'flazz/vim-colorschemes'
-"Plugin 'Rykka/riv.vim'
 Plugin 'Rykka/InstantRst'
-Plugin 'kien/ctrlp.vim'
+
+ " python 
+ " Got to definition <C-c>g 
 Plugin 'klen/python-mode'
+
+ " racket
+Plugin 'wlangstroth/vim-racket'
+
+ " js
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'moll/vim-node'
+
+
+" SnipMate
+" type tag <tab>
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+" Surround
+Plugin 'tpope/vim-surround'
+
 Plugin 'avakhov/vim-yaml'
+
  " show diff 
 Plugin 'airblade/vim-gitgutter'
+
 Plugin 'losingkeys/vim-niji'
  " When you enter a '(' then a matching ')' is automatically inserted.
 Plugin 'Townk/vim-autoclose'
  " When you enter a '(' then a matching ')' is automatically inserted. only
  " for lisp family
-"Plugin 'vim-scripts/paredit.vim'
-Plugin 'wlangstroth/vim-racket'
+
+" rainbow 
 Plugin 'luochen1990/rainbow'
+
  " Send command from vim to a running tmux session
 Plugin 'jgdavey/tslime.vim'
+
+" powerline bar
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
+
+" quick comment
+Plugin 'tomtom/tcomment_vim'
+
+" Most Recently Used files
+Plugin 'yegappan/mru'
+
+" find file on:ctrl p , off:ctrl g , mode:ctrl f
+Plugin 'kien/ctrlp.vim'
+
+" matchit, find the ending put % on the tag
+Plugin 'tmhedberg/matchit'
 
 call vundle#end()
 filetype plugin indent on
@@ -117,5 +148,5 @@ set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
-"To display the status line always, set the following option in your vimrc:
+    "To display the status line always, set the following option in your vimrc:
 set laststatus=2
