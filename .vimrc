@@ -49,6 +49,11 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'moll/vim-node'
 
+ " css
+Plugin 'skammer/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'groenewege/vim-less'
+
 
 " SnipMate
 " type tag <tab>
