@@ -50,10 +50,15 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'moll/vim-node'
 
  " css
-Plugin 'skammer/vim-css-color'
+"Plugin 'skammer/vim-css-color'
+Plugin 'JulesWang/css.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
+Plugin 'cakebaker/scss-syntax.vim'
 
+ "rails
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
 
 " SnipMate
 " type tag <tab>
@@ -102,6 +107,7 @@ filetype plugin indent on
 
 let g:paredit_mode = 1
 au FileType arc call PareditInitBuffer()
+au BufRead,BufNewFile *.scss set filetype=scss.css
 
 let g:syntastic_check_on_open=1 
 let g:syntasitc_python_checkers = ['flake8']
@@ -130,6 +136,7 @@ let g:pymode_rope_vim_completion = 1
 let g:pymode_rope = 1
 let g:pymode_lint_message=0
 "let g:pymode_rope_lookup_projdct = 1
+
 
 " gutter
 let g:gitgutter_max_signs = 500
