@@ -50,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git osx)
 
 # User configuration
 
@@ -94,3 +94,9 @@ alias ll='ls -l'
 alias tmux='TERM=xterm-256color tmux -2'
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+ #eval `dircolors ~/.solarized/dircolors.256dark`
+if brew list | grep coreutils > /dev/null ; then
+    PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+    alias ls='ls -F --show-control-chars --color=auto'
+    eval `gdircolors -b $HOME/.dir_colors`
+fi
