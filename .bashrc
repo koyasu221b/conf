@@ -24,6 +24,7 @@ alias vi='vim'
 alias workoff='deactivate'
 export TERM=xterm-256color
 
-PS1='\[\033[1;33m\]\u\[\033[1;37m\]@\[\033[1;32m\]\h\[\033[1;37m\]:\[\033[1;31m\]\W \[\033[1;36m\]\$ \[\033[0m\]'
+#PS1='\[\033[1;33m\]\u\[\033[1;37m\]@\[\033[1;32m\]\h\[\033[1;37m\]:\[\033[1;31m\]\W \[\033[1;36m\]\$ \[\033[0m\]'
 
-
+[[ -s /home/will/.autojump/etc/profile.d/autojump.sh ]] && source /home/will/.autojump/etc/profile.d/autojump.sh
+eval `dircolors ~/.solarized/dircolors.256dark`
