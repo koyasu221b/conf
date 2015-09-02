@@ -22,11 +22,12 @@ set tabstop=4 "the width for tab"
 set shiftwidth=4 "reindent's (>> or <<) width"
 set softtabstop=2 "control how many columns vim uses when you hit Tab in insert mode"
 set expandtab "change the tab to space"
-set smarttab
 
 " searching 
 set incsearch "vim start searching when you type the first character of the search string."
 set hlsearch "highlight search"
+set ignorecase "ignore case
+set smartcase  " distiguish Apple, APple, Apple
 
 set t_Co=256
 set showcmd
