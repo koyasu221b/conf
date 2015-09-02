@@ -1,5 +1,15 @@
+"syntax highlighting
 syntax on
-filetype indent plugin on
+
+"enables filetype detection
+filetype on
+
+"enable indent file for different filetyp
+filetype indent on
+
+"enable plugin 
+filetype plugin on
+
 set backspace=indent,eol,start
 set ruler
 set showcmd
@@ -161,4 +171,3 @@ au BufReadPost *.html set syntax=JavaScript
 
 
 let g:syntastic_check_on_open=1
-filetype plugin indent on     " required!
