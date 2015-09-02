@@ -1,29 +1,43 @@
-"syntax highlighting
+" syntax highlighting
 syntax on
 
-"enables filetype detection
+" enables filetype detection
 filetype on
 
-"enable indent file for different filetyp
+" enable indent file for different filetyp
 filetype indent on
 
-"enable plugin 
+" enable plugin 
 filetype plugin on
 
-set backspace=indent,eol,start
+" enable the status line at the bottom of the window. By default, it displays the line number, the column number
 set ruler
+
+" indent setting
+set autoindent
+set smartindent
+
+" tab setting
+set tabstop=4 "the width for tab"
+set shiftwidth=4 "reindent's (>> or <<) width"
+set softtabstop=2 "control how many columns vim uses when you hit Tab in insert mode"
+set expandtab "change the tab to space"
+set smarttab
+
+" searching 
+set incsearch "vim start searching when you type the first character of the search string."
+set hlsearch "highlight search"
+
+set t_Co=256
 set showcmd
-set incsearch
 set number
-set shiftwidth=4
-set softtabstop=4
 set modeline
-set expandtab
 set background=dark
 set nobackup
 set nocompatible               " be iMproved
-set autoindent
-set t_Co=256
+set backspace=indent,eol,start
+
+
 
 imap jj <ESC>
 "NERDTree
@@ -171,3 +185,13 @@ au BufReadPost *.html set syntax=JavaScript
 
 
 let g:syntastic_check_on_open=1
+filetype plugin indent on     " required!
+
+" Indent Python in the Google way.
+
+setlocal indentexpr=GetGooglePythonIndent(v:lnum)
+
+let s:maxoff = 50 " maximum number of lines to look backwards.
+
+let pyindent_nested_paren="&sw*2"
+let pyindent_open_paren="&sw*2"
