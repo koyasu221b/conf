@@ -105,6 +105,9 @@ Plugin 'mattn/emmet-vim'
 "Plugin 'maksimr/vim-jsbeautify'
 "Plugin 'einars/js-beautify'
 
+" react js
+Plugin 'mxw/vim-jsx'
+
 " This is a Vim plugin that provides Tern-based JavaScript editing support.
 Plugin 'marijnh/tern_for_vim'
 

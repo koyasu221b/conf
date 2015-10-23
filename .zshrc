@@ -88,6 +88,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
 export WORKON_HOME=~/py-envs
+# for bundle open
+export EDITOR='vim'
 source /usr/local/bin/virtualenvwrapper.sh
 alias workoff='deactivate'
 alias ll='ls -l'
@@ -100,3 +102,4 @@ if brew list | grep coreutils > /dev/null ; then
     alias ls='ls -F --show-control-chars --color=auto'
     eval `gdircolors -b $HOME/.dir_colors`
 fi
+
