@@ -92,16 +92,16 @@ let g:pymode_lint_message=0
 Plugin 'wlangstroth/vim-racket'
 
  " js
-Plugin 'othree/html5.vim'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-let g:javascript_enable_domhtmlcss = 1
-Plugin 'moll/vim-node'
-Plugin 'wookiehangover/jshint.vim'
-let JSHintUpdateWriteOnly=1
+"Plugin 'othree/html5.vim'
+"Plugin 'othree/javascript-libraries-syntax.vim'
+"Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'pangloss/vim-javascript'
+"let g:javascript_enable_domhtmlcss = 1
+"Plugin 'moll/vim-node'
+"Plugin 'wookiehangover/jshint.vim'
+"let JSHintUpdateWriteOnly=1
 "Plugin 'Shutnik/jshint2.vim'
-Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
 "Plugin 'maksimr/vim-jsbeautify'
 "Plugin 'einars/js-beautify'
 
@@ -175,7 +175,8 @@ let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
 set completeopt-=preview
 
-
+"automatically adjust shiftwidth and expandtab by files
+Plugin 'tpope/vim-sleuth'
 
 call vundle#end()
 filetype plugin indent on
