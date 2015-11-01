@@ -38,7 +38,11 @@ set nobackup
 set nocompatible               " be iMproved
 set backspace=indent,eol,start
 
+"tell Vim where to look for the tags file.
+set tags=./tags;
 
+"Use ack instead of grep "For example :grep controller
+set grepprg=ack
 
 imap jj <ESC>
 "NERDTree
