@@ -182,6 +182,10 @@ set completeopt-=preview
 "automatically adjust shiftwidth and expandtab by files
 Plugin 'tpope/vim-sleuth'
 
+" ack
+" usage :Ack [options] {pattern} [{directories}]
+Plugin 'mileszs/ack.vim'
+
 call vundle#end()
 filetype plugin indent on
 
