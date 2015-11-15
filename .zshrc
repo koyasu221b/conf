@@ -94,7 +94,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias workoff='deactivate'
 alias ll='ls -l'
 alias tmux='TERM=xterm-256color tmux -2'
-alias rake=noglob rake
+alias rake="noglob rake"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
  #eval `dircolors ~/.solarized/dircolors.256dark`
