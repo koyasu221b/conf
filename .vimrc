@@ -182,6 +182,9 @@ set completeopt-=preview
 "automatically adjust shiftwidth and expandtab by files
 Plugin 'tpope/vim-sleuth'
 
+" GO
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 
