@@ -182,6 +182,10 @@ Plugin 'tpope/vim-sleuth'
 " GO
 Plugin 'fatih/vim-go'
 
+" ack
+" usage :Ack [options] {pattern} [{directories}]
+Plugin 'mileszs/ack.vim'
+
 call vundle#end()
 filetype plugin indent on
 
