@@ -6,7 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="steeef"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,3 +107,16 @@ fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export GOPATH=~/work/gocode
+PATH=$PATH:~/work/gocode/bin
+
+# Status
+status() {
+        $*;
+        if (( $? == 0 )); 
+                then; tmux set-option -q status-bg green; 
+                else; tmux set-option -q status-bg red; 
+        fi
+        tmux set-option -q status-right "$* ";
+}
