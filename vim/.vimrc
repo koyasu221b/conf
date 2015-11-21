@@ -29,7 +29,6 @@ set hlsearch "highlight search"
 set ignorecase "ignore case
 set smartcase  " distiguish Apple, APple, Apple
 
-set t_Co=256
 set showcmd
 set number
 set modeline
@@ -75,9 +74,7 @@ Plugin 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
 let g:syntasitc_python_checkers = ['flake8']
 
-Plugin '29decibel/codeschool-vim-theme'
 Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
 
 Plugin 'Rykka/InstantRst'
 
@@ -188,9 +185,13 @@ Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 
+" Color Scheme
+Plugin '29decibel/codeschool-vim-theme'
+Plugin 'flazz/vim-colorschemes'
+set t_Co=256
+color Tomorrow-Night
 colorscheme codeschool
-"colorscheme distinguished
-"colorscheme python
+
 au FileType arc call PareditInitBuffer()
 au BufRead,BufNewFile *.scss set filetype=scss.css
 au BufReadPost *.html set syntax=JavaScript
