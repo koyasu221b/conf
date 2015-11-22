@@ -51,7 +51,6 @@ nmap <silent> <F5> :NERDTree<CR>
 "let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
 set termencoding=utf-8
 "To display the status line always, set the following option in your vimrc:
 set laststatus=2
@@ -178,18 +177,32 @@ set completeopt-=preview
 
 "automatically adjust shiftwidth and expandtab by files
 Plugin 'tpope/vim-sleuth'
-
-" GO
-Plugin 'fatih/vim-go'
-
 " ack
 " usage :Ack [options] {pattern} [{directories}]
 Plugin 'mileszs/ack.vim'
+
+" GO
+Plugin 'fatih/vim-go'
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 call vundle#end()
 filetype plugin indent on
 
 " Color Scheme
+set term=screen-256color
 Plugin '29decibel/codeschool-vim-theme'
 Plugin 'flazz/vim-colorschemes'
 set t_Co=256
