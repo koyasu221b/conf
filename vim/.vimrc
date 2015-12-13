@@ -118,6 +118,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
 Plugin 'cakebaker/scss-syntax.vim'
 
+
  "rails
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
@@ -197,6 +198,11 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+" automatically insert import paths
+let g:go_fmt_command = "goimports" 
+
+" clojure
+Plugin 'tpope/vim-fireplace'
 
 call vundle#end()
 filetype plugin indent on
