@@ -207,6 +207,11 @@ Plugin 'tpope/vim-fireplace'
 call vundle#end()
 filetype plugin indent on
 
+
+"DirDiff 
+"Usage DirDiff <dir1> <dir2>
+Plugin 'will133/vim-dirdiff'
+
 " Color Scheme
 set term=screen-256color
 Plugin '29decibel/codeschool-vim-theme'
