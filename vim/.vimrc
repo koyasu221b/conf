@@ -204,6 +204,10 @@ let g:go_fmt_command = "goimports"
 " clojure
 Plugin 'tpope/vim-fireplace'
 
+" scala
+Plugin 'ktvoelker/sbt-vim'
+Plugin 'derekwyatt/vim-scala'
+
 call vundle#end()
 filetype plugin indent on
 
