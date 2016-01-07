@@ -236,3 +236,9 @@ let s:maxoff = 50 " maximum number of lines to look backwards.
 
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
+
+" custom vimrc
+let $VIMRC = $VIM.'/custom.vimrc'
+if filereadable($VIMRC)
+    source $VIMRC
+endif
