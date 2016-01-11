@@ -208,6 +208,8 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'ktvoelker/sbt-vim'
 Plugin 'derekwyatt/vim-scala'
 
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
 call vundle#end()
 filetype plugin indent on
 
