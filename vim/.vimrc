@@ -211,6 +211,11 @@ Plugin 'derekwyatt/vim-scala'
 call vundle#end()
 filetype plugin indent on
 
+
+"DirDiff 
+"Usage DirDiff <dir1> <dir2>
+Plugin 'will133/vim-dirdiff'
+
 " Color Scheme
 set term=screen-256color
 Plugin '29decibel/codeschool-vim-theme'
@@ -235,3 +240,9 @@ let s:maxoff = 50 " maximum number of lines to look backwards.
 
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
+
+" custom vimrc
+let $VIMRC = $VIM.'/custom.vimrc'
+if filereadable($VIMRC)
+    source $VIMRC
+endif
