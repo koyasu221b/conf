@@ -164,6 +164,9 @@ Plugin 'yegappan/mru'
 " find file on:ctrl p , off:ctrl g , mode:ctrl f
 Plugin 'kien/ctrlp.vim'
 
+" take /yourdir/ as root directory
+noremap <C-a> :CtrlP ~/<CR>
+
 " matchit, find the ending put % on the tag
 Plugin 'tmhedberg/matchit'
 
@@ -242,9 +245,3 @@ let s:maxoff = 50 " maximum number of lines to look backwards.
 
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
-
-" custom vimrc
-let $VIMRC = $VIM.'/custom.vimrc'
-if filereadable($VIMRC)
-    source $VIMRC
-endif
