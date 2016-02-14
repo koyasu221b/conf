@@ -121,3 +121,5 @@ status() {
         fi
         tmux set-option -q status-right "$* ";
 }
+# added by travis gem
+[ -f /Users/will/.travis/travis.sh ] && source /Users/will/.travis/travis.sh
