@@ -95,6 +95,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias workoff='deactivate'
 alias ll='ls -l'
 alias rake="noglob rake"
+alias scip="racket -i -p neil/sicp -l xrepl"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
  #eval `dircolors ~/.solarized/dircolors.256dark`
@@ -109,6 +110,7 @@ eval "$(rbenv init -)"
 
 export GOPATH=~/work/gocode
 PATH=$PATH:~/work/gocode/bin
+PATH=$PATH:/Applications/Racket/bin
 
 # Status
 status() {
