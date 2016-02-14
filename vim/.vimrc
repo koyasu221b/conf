@@ -56,7 +56,6 @@ set termencoding=utf-8
 set laststatus=2
 filetype off                   " required!
 
-"set rtp+=~/.vim/bundle/vundle/
 "call vundle#rc()
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -90,6 +89,7 @@ let g:pymode_lint_message=0
 
  " racket
 Plugin 'wlangstroth/vim-racket'
+autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
  " js
 "Plugin 'othree/html5.vim'
@@ -139,18 +139,36 @@ Plugin 'avakhov/vim-yaml'
 Plugin 'airblade/vim-gitgutter'
 let g:gitgutter_max_signs = 500
 
-Plugin 'losingkeys/vim-niji'
 
 " provides insert mode auto-completion for quotes, parens, brackets, etc.
 Plugin 'Raimondi/delimitMate'
 
 " rainbow 
-Plugin 'luochen1990/rainbow'
-let g:rainbow_active = 1
+"Plugin 'luochen1990/rainbow'
+"let g:rainbow_active = 1
+Plugin 'losingkeys/vim-niji'
+let g:niji_dark_colours = [
+    \ [ '81', '#5fd7ff'],
+    \ [ '99', '#875fff'],
+    \ [ '1',  '#dc322f'],
+    \ [ '76', '#5fd700'],
+    \ [ '3',  '#b58900'],
+    \ [ '2',  '#859900'],
+    \ [ '6',  '#2aa198'],
+    \ [ '4',  '#268bd2'],
+    \ ]
+
+Plugin 'vim-scripts/paredit.vim'
 
  " Send command from vim to a running tmux session
 Plugin 'jgdavey/tslime.vim'
 let g:tslime_ensure_trailing_newlines = 1
+let g:tslime_normal_mapping = '<localleader>t'
+let g:tslime_visual_mapping = '<localleader>t'
+let g:tslime_vars_mapping = '<localleader>T'
+vmap <C-c><C-c> <Plug>SendSelectionToTmux
+nmap <C-c><C-c> <Plug>NormalModeSendToTmux
+nmap <C-c>r <Plug>SetTmuxVars
 
 " powerline bar
 Plugin 'Lokaltog/vim-powerline'
@@ -213,13 +231,15 @@ Plugin 'derekwyatt/vim-scala'
 
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
-call vundle#end()
-filetype plugin indent on
-
+"Lisp
+Plugin 'kovisoft/slimv'
 
 "DirDiff 
 "Usage DirDiff <dir1> <dir2>
 Plugin 'will133/vim-dirdiff'
+
+call vundle#end()
+filetype plugin indent on
 
 " Color Scheme
 set term=screen-256color
