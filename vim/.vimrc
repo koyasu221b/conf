@@ -246,6 +246,7 @@ set term=screen-256color
 Plugin '29decibel/codeschool-vim-theme'
 Plugin 'flazz/vim-colorschemes'
 set t_Co=256
+set background=dark
 color Tomorrow-Night
 colorscheme codeschool
 
