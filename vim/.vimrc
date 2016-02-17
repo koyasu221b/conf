@@ -76,6 +76,8 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'Rykka/InstantRst'
 
+" C
+Plugin 'vim-scripts/c.vim'
  " python 
  " Got to definition <C-c>g 
 Plugin 'klen/python-mode'
