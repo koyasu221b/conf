@@ -1,5 +1,7 @@
+[init]
+	templatedir = ~/.git/templates
 [user]
-	name = will
+	name = 
 	email = 
 [diff]
 	tool = vimdiff
