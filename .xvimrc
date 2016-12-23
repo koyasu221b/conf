@@ -1,0 +1,38 @@
+" syntax highlighting
+syntax on
+
+" enables filetype detection
+filetype on
+
+" enable indent file for different filetyp
+filetype indent on
+
+" enable plugin 
+filetype plugin on
+
+" enable the status line at the bottom of the window. By default, it displays the line number, the column number
+set ruler
+
+" indent setting
+set autoindent
+set smartindent
+
+" tab setting
+set tabstop=4 "the width for tab"
+set shiftwidth=4 "reindent's (>> or <<) width"
+set softtabstop=2 "control how many columns vim uses when you hit Tab in insert mode"
+set expandtab "change the tab to space"
+
+" searching 
+set incsearch "vim start searching when you type the first character of the search string."
+set hlsearch "highlight search"
+set ignorecase "ignore case
+set smartcase  " distiguish Apple, APple, Apple
+
+set showcmd
+set number
+set modeline
+set background=dark
+set nobackup
+set nocompatible               " be iMproved
+set backspace=indent,eol,start
