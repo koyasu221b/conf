@@ -35,7 +35,9 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'git' \
   'syntax-highlighting' \
-  'history-substring-search'
+  'history-substring-search' \
+  'homebrew' \
+  'ssh'
 
 #
 # Autosuggestions
@@ -96,7 +98,8 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 #zstyle ':prezto:module:prompt' theme 'sorin'
-zstyle ':prezto:module:prompt' theme 'paradox'
+#zstyle ':prezto:module:prompt' theme 'agnoster'
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 #
 # Ruby
@@ -128,13 +131,13 @@ zstyle ':prezto:module:prompt' theme 'paradox'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'pattern' \
+   'line' \
+   'cursor' \
+   'root'
 #
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
@@ -147,13 +150,13 @@ zstyle ':prezto:module:syntax-highlighting' styles \
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
-# zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
 
 # Set the tab title format.
-# zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 #
 # Tmux
